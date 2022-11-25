@@ -1,0 +1,202 @@
+/* <!-- NAME:DAXIL PATEL -->
+<!-- STUDENT ID:200520270 --> */
+
+
+body {
+    background: rgb(99, 39, 120)
+}
+.text-center{
+  background: linear-gradient(rgba(0, 0, 0, 0.2)50%,rgba(0, 0, 0, 0.2)50%), url(../img/th.jpg);
+  background-position:center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.text-center1{
+  background: linear-gradient(rgba(0, 0, 0, 0.2)50%,rgba(0, 0, 0, 0.2)50%), url(th.jpg);
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  background-position:center;
+  background-size: cover;
+  text-align: center;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none;
+}
+
+.profile-button:hover {
+    background: #682773;
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none;
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none;
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer;
+}
+
+.labels {
+    font-size: 11px;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8;
+}
+.b1{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+.a1{
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+.form1{
+  width: 700px;
+  height:525px;
+  color:#fff;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  background: linear-gradient(to top,rgba(0, 0, 0, 0.8)50%,rgba(0, 0, 0, 0.8)50%);
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  padding: 40px 25px;
+}
+.form1  input{
+  width: 100%;
+  height: 35px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  outline: none;
+}
+.form1 > input:focus{
+  outline: none;
+}
+.form1 ::placeholder{
+  color: #0e0e0e;
+  font-family: Arial;
+
+}
+.mb-3-cs1{
+  padding-top: 80px;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Sigmar One', cursive;
+
+}
+footer{
+  text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2)50%,rgba(0, 0, 0, 0.2)50%), url(../img/wh.jpg);
+    background-position:center;
+    background-size: cover;
+}
+/* end of CSS */
+/* <!-- NAME:DAXIL PATEL -->
+<!-- STUDENT ID:200520270 --> */
