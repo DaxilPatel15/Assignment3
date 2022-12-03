@@ -60,12 +60,18 @@ if(isset($_GET['deletedID']) && !empty($_GET['deletedID'])){
       }
        ?>
 
+       <?php
+       $customers = $customerObj->displayData();
+       foreach ($customers as $customer) {
+           ?>
+
+
+<section class="section-11">
+
+
       <div class="container emp-profile">
         <!-- to display data from sql -->
-              <?php
-              $customers = $customerObj->displayData();
-              foreach ($customers as $customer) {
-                  ?>
+
                 <div class="row">
 
                     <div class="col-md-6">
@@ -98,7 +104,7 @@ if(isset($_GET['deletedID']) && !empty($_GET['deletedID'])){
                 <div class="row">
 
                     </div>
-                    <div class="col-md-8">
+                    <div class="h-col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row">
@@ -169,12 +175,13 @@ if(isset($_GET['deletedID']) && !empty($_GET['deletedID'])){
 
                             </div>
                         </div>
+
                         <?php
                       }
                         ?>
                     </div>
 
-
+</section>
         </div>
     </main>
     <!-- adding global footer -->
