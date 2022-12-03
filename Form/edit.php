@@ -37,10 +37,7 @@ if(isset($_POST['Update'])){
 
 
 <main class="form-signin w-100 m-auto">
-  <?php
-  $customers = $customerObj->displayData();
-  foreach ($customers as $customer) {
-  ?>
+
 <!-- adding form  -->
 <form class="form1" action="edit.php" method="POST">
 
@@ -81,15 +78,13 @@ if(isset($_POST['Update'])){
 <!--adding submit button to submit the the changes and display in  the view page  -->
 <input type="hidden" name="ID" value="<?php echo $customer['ID']; ?>">
   <input class="w-100 btn btn-lg btn-primary" name="Update" value="Update Profile" type="submit">
-  <?php
-  echo "<p class ='error'>$error</p>";
-  ?>
+
 
 
 </form>
-<?php
-}
-?>
+
+
+
 </main>
 <!-- adding global footer -->
 <?php require ('./footer.php'); ?>
