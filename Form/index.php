@@ -41,31 +41,31 @@ $customerObj->insertData($_POST);
   <?php
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       // creating our variables
-      $firname1 = trim($_POST['FirstName']);
-      $lasname1 = trim($_POST['LastName']);
-      $email1 = trim($_POST['Email']);
-      $passw1 = trim($_POST['Passwrd']);
-      $prof1 = trim($_POST['Profession']);
+      $FirstName = trim($_POST['FirstName']);
+      $LastName = trim($_POST['LastName']);
+      $Email = trim($_POST['Email']);
+      $Passwrd = trim($_POST['Passwrd']);
+      $Profession = trim($_POST['Profession']);
 
-      $bio1 = trim($_POST['Bio']);
+      $Bio = trim($_POST['Bio']);
 
       // Make a variable whenever error is thrown
       $error = "";
-      if (empty($firname1)) {  // First Name
+      if (empty($FirstName)) {  // First Name
           $error = "First name is required";
-      } else if (empty($lasname1)) { // Last Name
+      } else if (empty($LastName)) { // Last Name
           $error = "Last name is required";
-      } else if (empty($email1)) { // Email
+      } else if (empty($Email)) { // Email
           $error = "An email is required";
-      } else if (!preg_match("/^[_.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+.)+[a-zA-Z]{2,6}$/i", $email1)) {
+      } else if (!preg_match("/^[_.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+.)+[a-zA-Z]{2,6}$/i", $Email)) {
           $error = "please use the correct email format";
-      } else if (empty($passw1)) {//password
+      } else if (empty($Passwrd)) {//password
           $error = "Please create a password";
-      } else if (strlen($passw1) < 8) {
+      } else if (strlen($Passwrd) < 8) {
           $error = "password must be atleast 8 characters long ";
-      }  else if (empty($prof1)) {//Profession
+      }  else if (empty($Profession)) {//Profession
           $error = "Please enter our Profession";
-      }  else if (empty($bio1)) {//bio
+      }  else if (empty($Bio)) {//bio
           $error = "Please enter our Bio";
       }else {
           ?>
