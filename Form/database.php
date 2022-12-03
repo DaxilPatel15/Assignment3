@@ -48,7 +48,7 @@ class database
     //This will fetch all the data from From Sql  (or READ)
     public function displayData()
     {
-        $query = "SELECT * FROM dAtA LIMIT 1";
+        $query = "SELECT * FROM dAtA";
         // using limit 1 to only load 1 inserted data.
         $result = $this->con->query($query);
         if ($result->num_rows > 0) {
@@ -59,19 +59,19 @@ class database
             return $data;
             }
         else {
-          ?>
-          <div class="addprofile">
 
 
-          <?php  echo "no profile found!"; ?>
-              </div>
-              <?php
+
+
+           echo "no profile found!";
+
+
         }
     }
     // update and read
   public function displayRecordByID($ID){
 
-  $query = "SELECT * FROM dAtA WHERE ID = '$ID' LIMIT 1";
+  $query = "SELECT * FROM dAtA WHERE ID = '$ID' ";
   $result = $this->con->query($query);
   if($result->num_rows > 0){
     $row = $result->fetch_assoc();
@@ -92,7 +92,7 @@ class database
   $bio  = $this->con->real_escape_string($_POST['uBio']);
   $ID = $this->con->real_escape_string($_POST['ID']);
   if (!empty($ID) && !empty($postData)) {
-   $query = "UPDATE dAtA SET FirstName = '$firname ', LastName = '$lasname ', Email = '$email ', Passwrd = '$passw ', Profession = '$prof ', Bio = '$bio ' WHERE ID = '$ID' LIMIT  1  ";
+   $query = "UPDATE dAtA SET FirstName = '$firname ', LastName = '$lasname ', Email = '$email ', Passwrd = '$passw ', Profession = '$prof ', Bio = '$bio ' WHERE ID = '$ID'   ";
    $sql = $this->con->query($query);
    if($sql == true){
      // to show message on header if successfully updated data that were inserted in the edit page
@@ -122,3 +122,4 @@ class database
 
 ?>
 <!-- end of code -->
+
