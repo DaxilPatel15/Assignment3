@@ -38,56 +38,12 @@ if(isset($_POST['Update'])){
 
 <main class="form-signin w-100 m-auto">
   <?php
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      //create our variables
-      $firname2 = trim($_POST['uFirstName']);
-      $lasname2 = trim($_POST['uLastName']);
-      $email2 = trim($_POST['uEmail']);
-      $passw2 = trim($_POST['uPasswrd']);
-      $prof2 = trim($_POST['uProfession']);
-      $bio2 = trim($_POST['uBio']);
-
-
-
-
-      // Make a variable whenever error is thrown
-      $error = "";
-      // adding if statement
-      if (empty($firname2)) {  // First Name
-          $error = "First name is required";
-      } else if (empty($lasname2)) { // Last Name
-          $error = "Last name is required";
-      } else if (empty($email2)) { // Email
-          $error = "An email is required";
-      } else if (!preg_match("/^[_.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+.)+[a-zA-Z]{2,6}$/i", $email2)) {
-          $error = "please use the correct email format";
-      } else if (empty($passw2)) {   //Password
-          $error = "Please create a password";
-      } else if (strlen($passw2) < 8) {  //Password
-          $error = "password must be atleast 8 characters long ";
-      }  else if (empty($prof2)) { //Profession
-          $error = "Please enter our Profession";
-      }  else if (empty($bio2)) {   //Bio
-          $error = "Please enter our Bio";
-      }else {
-          ?>
-          <!-- adding script and an alert to know the user that the data has been updated -->
-          <script>
-              alert('Your details have been Updated');
-          </script>
-
-
-          <?php
-      }
-  }
-
-  ?>
-<!-- adding form  -->
-<form class="form1" action="edit.php" method="POST">
-  <?php
   $customers = $customerObj->displayData();
   foreach ($customers as $customer) {
   ?>
+<!-- adding form  -->
+<form class="form1" action="edit.php" method="POST">
+
 
   <h2 class="h3 mb-3 fw-normal">UPDATE DATA</h2>
 
