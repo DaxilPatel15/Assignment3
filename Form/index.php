@@ -87,32 +87,32 @@ $customerObj->insertData($_POST);
 
   <div class="form-floating">
     <!-- adding input for FirstName -->
-    <input type="text" class="form-control" name="FirstName" placeholder="Firstname">
+    <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="Firstname">
     <label for="FirstName">Firstname</label>
   </div>
   <div class="form-floating">
     <!-- adding input for LastName -->
-    <input type="text" class="form-control"  name="LastName" placeholder="Lastname">
+    <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Lastname">
     <label for="LastName">Lastname</label>
   </div>
 <!-- adding input for Email -->
   <div class="form-floating">
-    <input type="text" class="form-control"  name="Email" placeholder="name@example.com">
+    <input type="text" class="form-control" id="Email" name="Email" placeholder="name@example.com">
     <label for="Email">Email</label>
   </div>
   <div class="form-floating">
     <!-- adding input for Password -->
-    <input type="password" class="form-control" name="Passwrd"  placeholder="Password">
+    <input type="password" class="form-control" id="Passwrd" name="Passwrd"  placeholder="Password">
     <label for="Passwrd">Password</label>
   </div>
   <div class="form-floating">
     <!-- adding input for Profession -->
-    <input type="text" class="form-control"  name="Profession" placeholder="Profession">
+    <input type="text" class="form-control" id="Profession" name="Profession" placeholder="Profession">
     <label for="Profession">Profession</label>
   </div>
   <div class="form-floating">
     <!-- adding input for Bio -->
-    <input type="textarea" class="form-control"  name="Bio" placeholder="text">
+    <input type="text" class="form-control" id="Bio" name="Bio" placeholder="text">
     <label for="Bio">Add your Bio</label>
   </div>
 
