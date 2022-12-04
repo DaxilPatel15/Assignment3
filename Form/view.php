@@ -104,7 +104,7 @@ if(isset($_GET['deletedID']) && !empty($_GET['deletedID'])){
                     </div>
                     <div class="h-col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row">
                                             <div class="col-md-6">
 
@@ -186,5 +186,5 @@ if(isset($_GET['deletedID']) && !empty($_GET['deletedID'])){
     <?php require ('./footer.php'); ?>
 
   </body>
-  <html>
+  </html>
   <!-- end of code -->
