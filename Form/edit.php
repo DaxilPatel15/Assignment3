@@ -46,33 +46,33 @@ if(isset($_POST['Update'])){
 
   <div class="form-floating">
       <!-- adding input for FirstName -->
-    <input type="text" class="form-control" name="uFirstName" value="<?php echo $customer['FirstName'];?>">
+    <input type="text" class="form-control" id="FirstName" name="uFirstName" value="<?php echo $customer['FirstName'];?>">
     <label for="FirstName">Firstname</label>
   </div>
   <div class="form-floating">
       <!-- adding input for LastName -->
-    <input type="text" class="form-control"  name="uLastName" value="<?php echo $customer['LastName'];?>">
+    <input type="text" class="form-control" id="LastName" name="uLastName" value="<?php echo $customer['LastName'];?>">
     <label for="LastName">Lastname</label>
   </div>
 
   <div class="form-floating">
       <!-- adding input for Email -->
-    <input type="text" class="form-control"  name="uEmail" value="<?php echo $customer['Email'];?>">
+    <input type="text" class="form-control" id="Email" name="uEmail" value="<?php echo $customer['Email'];?>">
     <label for="Email">Email</label>
   </div>
   <div class="form-floating">
       <!-- adding input for Password -->
-    <input type="password" class="form-control" name="uPasswrd"  value="<?php echo $customer['Passwrd'];?>">
+    <input type="password" class="form-control" id="Passwrd" name="uPasswrd"  value="<?php echo $customer['Passwrd'];?>">
     <label for="Passwrd">Password</label>
   </div>
   <div class="form-floating">
       <!-- adding input for Profession -->
-    <input type="text" class="form-control"  name="uProfession" value="<?php echo $customer['Profession'];?>">
+    <input type="text" class="form-control" id="Profession" name="uProfession" value="<?php echo $customer['Profession'];?>">
     <label for="Profession">Profession</label>
   </div>
   <div class="form-floating">
       <!-- adding input for Bio -->
-    <input type="textarea" class="form-control"  name="uBio" value="<?php echo $customer['Bio'];?>">
+    <input type="text" class="form-control" id="Bio" name="uBio" value="<?php echo $customer['Bio'];?>">
     <label for="Bio">Add your Bio</label>
   </div>
 <!--adding submit button to submit the the changes and display in  the view page  -->
